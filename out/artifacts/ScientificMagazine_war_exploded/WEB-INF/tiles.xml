@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="baseLayout" template="/layout/baseLayout.jsp">
+        <put-attribute name="title" value="Template"/>
+        <put-attribute name="header" value="/layout/header.jsp"/>
+        <put-attribute name="menu" value="/layout/menu.jsp"/>
+        <put-attribute name="body" value="/layout/body.jsp"/>
+        <put-attribute name="footer" value="/layout/footer.jsp"/>
+        <!--<put-list-attribute name="csslink">-->
+            <!--<add-attribute value="/assets/plugins/select2/select2-rtl.css" />-->
+            <!--<add-attribute value="/assets/plugins/select2/select2-metronic-rtl.css" />-->
+        <!--</put-list-attribute>-->
+
+    </definition>
+
+    <definition name="index" template="/layout/baseLayout.jsp">
+        <put-attribute name="title" value="Template"/>
+        <put-attribute name="header" value="/layout/header.jsp"/>
+        <put-attribute name="menu" value="/layout/menu.jsp"/>
+        <put-attribute name="body" value="/layout/body.jsp"/>
+        <put-attribute name="footer" value="/layout/footer.jsp"/>
+    </definition>
+
+    <!--<definition name="productList" extends="baseLayout">-->
+    <!--<put-attribute name="title"  value="Friends"/>-->
+    <!--<put-attribute name="body"   value="/user/productList.jsp"/>-->
+    <!--</definition>-->
+
+    <!--<definition name="articleLoad" extends="baseLayout">-->
+        <!--<put-attribute name="title" value="article"/>-->
+        <!--<put-attribute name="body" value="/user/article.jsp"/>-->
+    <!--</definition>-->
+    <definition name="articleLoad" template="/user/article.jsp">
+        <!--<put-attribute name="body" value="/user/article.jsp"/>-->
+        <!--<put-list-attribute name="csslink">-->
+            <!--<add-attribute value="/assets/plugins/select2/select2-rtl.css" />-->
+            <!--<add-attribute value="/assets/plugins/select2/select2-metronic-rtl.css" />-->
+        <!--</put-list-attribute>-->
+    </definition>
+    <definition name="articleLoad22" template="/user/article2.jsp"></definition>
+    <definition name="articleLoad2" template="/user/articleLoadDataTable.jsp"></definition>
+    <definition name="refereeLoad" template="/admin/newReferee.jsp">
+    </definition>
+    <definition name="assignReferee" template="/admin/assignReferee.jsp">
+    </definition>
+    <definition name="assignRefereeDataTable" template="/admin/assignRefereeDataTable.jsp">
+    </definition>
+    <definition name="login" template="/login.jsp">
+        <put-attribute name="title" value="Login"/>
+    </definition>
+
+    <!--<definition name="register" template="/login.jsp">-->
+        <!--<put-attribute name="title" value="register"/>-->
+    <!--</definition>-->
+
+</tiles-definitions>
